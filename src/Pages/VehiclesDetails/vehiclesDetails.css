@@ -1,0 +1,161 @@
+.vehicle-details{
+  padding-bottom: 0;
+}
+
+.vehicle-details::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% / 3);
+  height: 60vh;
+  background: var(--primary);
+}
+
+.details-left ,.details-right , .details-middle{
+  position: relative;
+}
+.details-img-left{
+  position: relative;
+  height: 55vh;
+  width: 100% ;
+  object-fit: cover;
+  object-position: center;
+}
+
+.vehicle-details .price{
+  position: relative;
+  color: #fff;
+  font-family: 'Racing Sans One';
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.vehicle-details .price span {
+  font-size: 1.8rem;
+}
+.contact-seller{
+  color: #Fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.content{
+  padding: 20px;
+}
+.content h2{
+  font-family: "Racing Sans One" , cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.details-box{
+  padding: 15px 20px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 2px 0 35px 0 rgba(68,88,144,0.12);
+  margin-bottom: 15px;
+  transition: .3s;
+}
+
+.details-box:hover{
+  box-shadow: 2px 0 40px 0 rgba(0,0,0,0.2);
+}
+
+.details-box i{
+  display: block;
+  font-size: 36px;
+  color: var(--primary);
+  float: left;
+  line-height: 0;
+}
+
+.details-box span{
+  font-family: 'Racing Sans One' , cursive;
+  font-size: 1.5rem;
+  line-height: 10px;
+  display: block;
+  font-weight: 500;
+  color: #222;
+  margin-left: 50px;
+}
+
+.details-box p{
+  padding: 15px 0 0 0;
+  margin: 0 0 0 50px ;
+  font-size: 14px;
+  color: #484848;
+}
+
+.details-img-middle , .details-img-right{
+  height: 29vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.details-img-right {
+  height: 30vh;
+}
+
+.details-description{
+  padding: 30px 20px 20px;
+}
+
+.details-description p{
+  color: #777;
+}
+
+@media screen and (max-width:768px) {
+  .vehicle-details .price  , .contact-seller{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background-color: var(--primary);
+    font-size: 2rem;
+  }
+
+  .contact-seller{
+    padding-bottom: 15px;
+    padding-top: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .details-box span{
+    font-size: 1.3rem;
+  }
+  .details-box p{
+    font-size: .8rem;
+  }
+
+
+  .details-description{
+    margin-top: 15px;
+    text-align: center;
+  }
+  .details-description h4{
+    margin-bottom: 15px;
+  }
+  .details-description p{
+    color: #777;
+  }
+
+  .vehicle-details::before{
+    display: none !important; 
+  }
+}

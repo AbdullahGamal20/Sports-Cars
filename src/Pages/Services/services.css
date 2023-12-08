@@ -1,0 +1,77 @@
+.services .row{
+  background: #eee;
+  padding: 30px;
+}
+
+.services .info{
+  position: relative;
+}
+
+.services .info h3{
+  color: var(--primary);
+  font-family: 'Racing Sans One' , cursive;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.services .info p{
+  color: #9195a2;
+  line-height: 1.6;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+.services .info .more{
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  width:190px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.services .info .more:hover{
+  transform: scale(1.1);
+  background: var(--second);
+  
+}
+
+.services .images img{
+  border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .services .row{
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  .services .images{
+    margin-bottom: 50px;
+  }
+  .services .info h3{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .services .info p{
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+  .services .info .more{
+    font-size: 16px;
+    letter-spacing: 1;
+    margin-bottom: 40px;
+  } 
+}

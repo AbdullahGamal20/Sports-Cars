@@ -1,0 +1,90 @@
+.vehicle{
+  position: relative;
+  background: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 30px rgba(0,0,0,.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.vehicle:hover .vehicle-img img{
+  transform: scale(1.1);
+}
+
+.vehicle-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.vehicle-img img{
+  transition: .3s ease-in-out;
+}
+
+.vehicle h3{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.vehicle a{
+  color: var(--primary);
+}
+
+.vehicle a:hover{
+  color: #f82249;
+}
+
+.vehicle p{
+  margin-bottom: 15px;
+  color: #060c22;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+}
+
+.vehicle .price{
+  font-family: 'Racing Sans One', cursive;
+  color: var(--primary);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vehicle .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.vehicle .buttons a{
+  color: #fff;
+  background: var(--primary);
+  padding: 5px 20px;
+  width: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: .5s;
+}
+
+.vehicle .buttons .details{
+  color: #fff;
+  background: var(--primary);
+}
+
+.vehicle .buttons .details:hover{
+  background: #fff;
+  color: var(--primary);
+}
+
+.vehicle .buttons .like{
+  background: #f82249;
+  color: #fff;
+}
+
+.vehicle .buttons .like.active,
+.vehicle .buttons .like:hover{
+  color: #f82249;
+  background: #fff;
+}

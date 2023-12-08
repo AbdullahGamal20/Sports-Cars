@@ -1,0 +1,125 @@
+header{
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  transition: 0.5s;
+  z-index: 10000 !important;
+}
+
+header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 100%;
+  background: var(--primary);
+  transition: 0.5s;
+}
+
+.logo{
+  font-family: 'Racing Sans One' , cursive;
+  position: relative;
+  font-size: 35px;
+  color: var(--primary);
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 10000;
+}
+
+.logo::before{
+  content: '';
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 50%;
+  height: 3px;
+  background: var(--primary);
+}
+.logo::after{
+  content: '';
+  position: absolute;
+  left: 80%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background: var(--primary);
+}
+
+header .like{
+  position: absolute;
+  top: 0;
+  right: 130px;
+  width: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--third);
+  color: #fff;
+  font-size: 2rem;
+  transition: .5s;
+  cursor: pointer;
+  z-index: 9000;
+}
+
+header .likeNumbers{
+  position: absolute;
+  right: 27%;
+  top: 25%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 25px;
+  height: 25px;
+  background: var(--fourth);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  position: relative;
+  width: 130px;
+  height: 100%;
+  color: #fff;
+  font-size: 2rem;
+  transition: .5s;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+@media screen and (max-width:768px) {
+  header .like , header::after {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    position: absolute;
+    top: 13%;
+    right: -80px;
+  }
+  header .like {
+    position: absolute;
+    right: 70px;
+  }
+
+  header{
+    padding: 10px 20px;
+  }
+  
+
+
+}

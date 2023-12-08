@@ -1,0 +1,34 @@
+.contact .ask{
+  color: var(--primary);
+  font-family: 'Racing Sans One' , cursive;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.contact .btn{
+  background: var(--primary);
+  color: #fff;
+  width: 140px;
+  transition: .3s;
+}
+
+.contact .btn:hover{
+  background: var(--second);
+  transform: scale(1.1);
+}
+.form{
+  width: 920px;
+  margin: 0 auto;
+}
+
+label{
+  color: #999;
+}
+.contact input::placeholder{
+  color: #999;
+}
+@media screen and (max-width:768px) {
+  .form{
+    width: 350px;
+  }
+}
